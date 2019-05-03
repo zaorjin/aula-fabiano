@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>	
+		<script type="text/javascript">
+			
+			var v=[];
+			
+			function add(){
+			var c;
+			c = parseInt($("#notas").val());
+			v.push(c);
+			console.log(v);
+		}	
+			function maior(){
+			var m=0;
+			for(var i=0; i<v.length; i++){
+				if(v[i]>m){
+					m=v[i];
+				}
+			}
+			$("#maior").val(m);
+		}	
+			
+		</script>
+	</head>
+	<body>
+		Notas: <input type="text" id="notas"><br>
+		<br><button onclick="add()">Add Notas</button><br><br>
+		<br><button onclick="maior()">Maior</button>
+		: <input type="text" id="maior"><br>
+	</body>
+</html>
