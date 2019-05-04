@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>	
+		<script type="text/javascript">
+			
+			var v=[];
+			
+			function add(){
+			var c;
+			c = parseInt($("#notas").val());
+			v.push(c);
+			console.log(v);
+		}	
+			function alinhar(){
+			var aux=0;
+			do{
+				troca=0;
+				for(var i=0; i<v.length; i++){
+					if(v[i]>v[i+1]){
+						aux=v[i];
+						v[i]=v[i+1];
+						v[i+1]=aux;
+						troca++;
+						}
+					}
+				}while(troca>0)
+				$("#alinhador").val(v);
+				console.log(v);
+			}		
+			
+		</script>
+	</head>
+	<body>
+		Notas: <input type="text" id="notas"><br>
+		<br><button onclick="add()">Add Notas</button><br><br>
+		<br><button onclick="alinhar()">Alinhar</button>
+		: <input type="text" id="alinhador"><br>
+	</body>
+</html>
