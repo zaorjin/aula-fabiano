@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>	
+		<script type="text/javascript">
+		
+			function positivo(){
+			var n,r;
+			var n = parseInt($("#num1").val())
+				r=n%2;
+				if(r==0){
+				alert("PAR");
+				}
+				else{
+				alert("IMPAR");
+				}
+				
+		}	
+			
+			
+		</script>
+	</head>
+	<body>
+	
+		<h1>NUMERO: <input type="text" id="num1"><br></h1>
+		<br><button onclick="positivo()">Resultado</button>
+	</body>
+</html>

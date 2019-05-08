@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>	
+		<script type="text/javascript">
+		
+			function calcular(){
+			var a,c,b,d;
+			var a = parseInt($("#num1").val())
+			var b = parseInt($("#num2").val())
+			var c = parseInt($("#num3").val())
+			var d = (a+b+c)/3;
+			alert(d);
+		}	
+			
+			
+		</script>
+	</head>
+	<body>
+	
+		Numero 1: <input type="text" id="num1"><br>
+		Numero 2: <input type="text" id="num2"><br>
+		Numero 3: <input type="text" id="num3"><br>
+		<button onclick="calcular()">Media</button>
+	</body>
+</html>

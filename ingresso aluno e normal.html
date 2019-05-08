@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>INGRESSOS</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>	
+		<script type="text/javascript">
+			function calcular(){
+			var a,b;
+			 a=($("#num1").val())
+			 b=($("#num2").val())		
+			
+			if(a=="aluno"){
+				if(b<=20){
+				alert("R$30");
+				}
+				else{
+				alert("R$40");
+				}
+			}else{
+				if(a=="normal"){
+					if(b<=20){
+						alert("R$50");
+					}
+					else{ 
+						alert("R$75");
+					}
+				}else{
+					alert("Tipo invalido");
+					}
+				}
+			}
+			
+			
+			
+		</script>
+	</head>
+	<body>
+	
+	<h1>Aluno/Normal: <input type="text" id="num1"><br>
+		IDADE: <input type="text" id="num2"><br></h1>
+		<button onclick="calcular()">Calcular</button><br><br>
+	</body>
+</html>

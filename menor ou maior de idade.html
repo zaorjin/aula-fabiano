@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>	
+		<script type="text/javascript">
+		
+			function positivo(){
+			var n,a=2019,r;
+			var n = parseInt($("#num1").val())
+				r=a-n;
+				if(r>=18){
+				alert("MAIOR");
+				}
+				else{
+				alert("MENOR");
+				}
+				
+		}	
+			
+			
+		</script>
+	</head>
+	<body>
+	
+		<h1>ANO DE NASCIMENTO: <input type="text" id="num1"><br></h1>
+		<br><button onclick="positivo()">Resultado</button>
+	</body>
+</html>

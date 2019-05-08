@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>APOSENTADORIA</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>	
+		<script type="text/javascript">
+				function calcular(){
+					var a,b;
+					a=($("#num1").val())
+					b=($("#num2").val())	
+				if(b>120){
+					alert("Idade invalida");
+				}
+				if(b<0){
+					alert("Idade invalida");
+				}
+				if((a!="masculino")&&(a!="feminino")){
+					alert("Genero invalido");
+				}else{
+				if(a=="masculino"){
+					if(b<=64){
+						alert("Nao Aposenta");
+					}
+					else{
+						alert("Aposenta");
+					}	
+				}
+				if(a=="feminino"){
+					if(b<=59){
+						alert("Nao Aposenta");
+					}
+					else{
+						alert("Aposenta");
+					}
+				}
+			}
+		
+		
+		
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			</script>
+	</head>
+	<body>
+	
+	<h1>GENERO: <input type="text" id="num1"><br>
+		IDADE: <input type="text" id="num2"><br></h1>
+		<button onclick="calcular()">Calcular</button><br><br>
+	</body>
+</html>

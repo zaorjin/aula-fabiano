@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Formula de Bhaskara</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>	
+		<script type="text/javascript">
+		
+			function calcular(){
+			var a,c,b,d,x,X;
+			var a = parseInt($("#num1").val())
+			var b = parseInt($("#num2").val())
+			var c = parseInt($("#num3").val())
+			var d = Math.pow(b,2)-4*a*c;
+			if (d<0){
+			alert("IMPOSSIVEL");
+            }
+			if(d>=0){
+			var x = (-(b)+Math.sqrt(d))/(2*(a));
+			var X = (-(b)-Math.sqrt(d))/(2*(a));
+			$("#num4").val(x);
+			$("#num5").val(X);
+			}
+		}	
+			
+			
+		</script>
+	</head>
+	<body>
+	
+	<h1>Numero A: <input type="text" id="num1"><br>
+		Numero B: <input type="text" id="num2"><br>
+		Numero C: <input type="text" id="num3"><br></h1>
+		<button onclick="calcular()">Calcular</button><br><br>
+		Primeira raiz: <input type="text" id="num4"> Segunda raiz: <input type="text" id="num5">
+	</body>
+</html>
